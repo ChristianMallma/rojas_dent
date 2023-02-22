@@ -1,0 +1,16 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+{% block content %}
+<section class="py-1">
+    <div class="container py-5">
+        <div class="row mb-4 mb-lg-5">
+            <div class="col-md-8 col-xl-6 mx-auto">
+                <h1 class="fw-bold text-success mb-2 text-center">{{ page.title }}</h1>
+                <p></p>
+                <p class="text-muted">{{ page.content | safe }}</p>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
