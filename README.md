@@ -1,6 +1,7 @@
 # rojas_dent
 This is a website for the business of Rojas Dent Care
 
+# Create a .env and add the following variables:
 
 SECRET_KEY='this_is_a_secret_key'
 DEBUG=True
