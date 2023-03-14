@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'about.apps.AboutConfig',
-    'core',
+    'core.apps.CoreConfig',
     'clinical_cases.apps.ClinicalCasesConfig',
     'ckeditor',
     'contact.apps.ContactConfig',
