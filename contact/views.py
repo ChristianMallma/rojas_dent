@@ -19,7 +19,7 @@ def contact(request):
                 'Rojas Dent: Nuevo mensaje de contacto',
                 f"De {name} <{email}\n\nEscribió:\n\n{content}",
                 '',
-                ['christianmichelmallma@gmail.com'],
+                ['ruthrojasmanzaneda@gmail.com'],
                 reply_to=[email]
             )
             try:
