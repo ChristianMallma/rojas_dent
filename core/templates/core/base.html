@@ -24,8 +24,8 @@
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item"><a class="nav-link {% if request.path == '/' %}active{% endif %}" href="{% url 'home' %}">Inicio</a></li>
                     <li class="nav-item"><a class="nav-link {% if request.path == '/about/' %}active{% endif %}" href="{% url 'about' %}">Nosotros</a></li>
-                    <li class="nav-item"><a class="nav-link {% if request.path == '/services/' %}active{% endif %}" href="{% url 'services' %}">Servicios</a></li>
-                    <li class="nav-item"><a class="nav-link {% if request.path == '/clinical_cases/' %}active{% endif %}" href="{% url 'clinical_cases' %}"><span style="color: var(--bs-nav-link-hover-color);">Casos Clínicos</span></a></li>
+                    <li class="nav-item"><a class="nav-link {% if request.path == '/services/all/' %}active{% endif %}" href="{% url 'services' keyword='all' %}">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link {% if request.path == '/clinical_cases/all/' %}active{% endif %}" href="{% url 'clinical_cases' keyword='all' %}"><span style="color: var(--bs-nav-link-hover-color);">Casos Clínicos</span></a></li>
                     <li class="nav-item"><a class="nav-link {% if request.path == '/contact/' %}active{% endif %}" href="{% url 'contact' %}">Contacto</a></li>
                 </ul>
 {#                <a class="btn btn-primary shadow" role="button" href="signup.html">Registrarse</a>#}

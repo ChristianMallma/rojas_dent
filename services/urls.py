@@ -3,5 +3,5 @@ from . import views
 
 urlpatterns = [
     # Services paths
-    path('', views.services, name="services"),
+    path('<str:keyword>/', views.services, name="services"),
 ]
