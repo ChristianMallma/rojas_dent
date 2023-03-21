@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import ClinicalCases
+from .models import ClinicalCases, ClinicalCasesDetail
 
 
 # Register your models here.
@@ -11,4 +11,10 @@ class ClinicalCasesAdmin(admin.ModelAdmin):
     date_hierarchy = 'created_at'
 
 
-admin.site.register(ClinicalCases, ClinicalCasesAdmin)
+class ClinicalCasesDetailAdmin(admin.ModelAdmin):
+    readonly_fields = ('created_at', 'updated_at')
+    list_display = ('created_at', 'updated_at')
+    ordering = ('-created_at', 'updated_at')
+
+
+admin.site.register(ClinicalCasesDetail, ClinicalCasesDetailAdmin)
