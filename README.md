@@ -1,6 +1,11 @@
 # rojas_dent
 This is a website for the business of Rojas Dent Care
 
+# Tecnologies:
+Django4
+Bootstrap5
+PostgreSQL
+
 # Web page in production:
 https://rojasdentalcare.com/
 
